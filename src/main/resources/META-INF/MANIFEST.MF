@@ -1,0 +1,10 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.newbie
+Bundle-Version: 1.0.0
+Bundle-Name: newbie-bundle-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.newbie.newbie-bundle-core;singleton=true
+Nuxeo-Component: OSGI-INF/computeprice-service.xml,
+ OSGI-INF/updateprice-operation-contrib.xml

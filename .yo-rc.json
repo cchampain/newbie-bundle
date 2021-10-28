@@ -1,0 +1,17 @@
+{
+  "generator-nuxeo": {
+    "lastRemote": "/Users/Carl.Champain@hyland.com/.cache/node-yeoman-remote-cache/nuxeo/generator-nuxeo-meta/3.0.0",
+    "promptValues": {
+      "parent_artifact": "nuxeo-parent",
+      "parent_version": "2021.1",
+      "package": "com.newbie",
+      "username": "cchampain",
+      "studio:package": "com.nuxeo.studio",
+      "studio:constant": "StudioConstant"
+    },
+    "_nuxeo_version": "2021.1",
+    "maven:gav": "nuxeo-studio:cchampain-SANDBOX:::test",
+    "connect:token": "fc3dada8-4f3d-48fe-a716-e3285d89c13d",
+    "studio:symbolicname": "cchampain-SANDBOX"
+  }
+}

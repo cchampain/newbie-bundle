@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="com.newbie.ComputePrice">
+
+  <implementation class="com.newbie.ComputePriceImpl" />
+
+  <service>
+    <provide interface="com.newbie.ComputePrice" />
+  </service>
+</component>

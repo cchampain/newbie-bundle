@@ -27,8 +27,9 @@ import javax.inject.Inject;
 
 @RunWith(FeaturesRunner.class)
 @Features({ PlatformFeature.class })
-@Deploy({"com.newbie.newbie-bundle-core:OSGI-INF/computeprice-service.xml"})
-// @PartialDeploy(bundle = "studio.extensions.cchampain-SANDBOX", extensions = { TargetExtensions.ContentModel.class })
+// @Deploy({"com.newbie.newbie-bundle-core:OSGI-INF/computeprice-service.xml"})
+@PartialDeploy(bundle = "studio.extensions.cchampain-SANDBOX", extensions = { TargetExtensions.ContentModel.class })
+
 public class TestComputePrice {
 
     @Inject
@@ -44,18 +45,18 @@ public class TestComputePrice {
 
     @Test
     public void testCreateDoc() {
-            
-            DocumentModel doc = session.createDocumentModel("/", "doc-product", "Product");
+
+            DocumentModel doc = session.createDocumentModel("/", "myProduct", "product");
             doc = session.createDocument(doc);
             session.save();
 
-            IdRef docIdRef = new IdRef(doc.getId());
-            doc = session.getDocument(docIdRef);
-            assertNotNull(doc);
+            // IdRef docIdRef = new IdRef(doc.getId());
+            // doc = session.getDocument(docIdRef);
+            // assertNotNull(doc);
             
-            PathRef docPathRef = new PathRef(doc.getPathAsString());
-            doc = session.getDocument(docPathRef);
-            assertNotNull(doc);
+            // PathRef docPathRef = new PathRef(doc.getPathAsString());
+            // doc = session.getDocument(docPathRef);
+            // assertNotNull(doc);
 
             String query = "SELECT * FROM File";
             DocumentModelList queryResults = session.query(query);
